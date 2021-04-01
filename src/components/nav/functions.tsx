@@ -25,3 +25,12 @@ export const Button = ({ buttonName, iconName }: ButtonProps) => {
     </button>
   );
 };
+
+export const MenuDropdown = ({ buttonName }: ButtonProps) => {
+  return (
+    <button>
+      {buttonName}
+      {buttonName !== "About" && <SvgIcon iconName={"Chevron Down"} />}
+    </button> // the 'About' tab doesn't have a dropdown icon.
+  );
+};

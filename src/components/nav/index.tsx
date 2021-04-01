@@ -1,12 +1,13 @@
 import React from "react";
-import { Tab, Button } from "./functions";
+import { Tab, Button, MenuDropdown } from "./functions";
+import { SvgIcon, OrangeLogo } from "./../../static/icons";
 import "./style.scss";
 
 interface NavProps {
   selectedTab: string;
 }
 
-export const TopBar = ({ selectedTab }: NavProps) => {
+const TopBar = ({ selectedTab }: NavProps) => {
   return (
     <div className="top-bar-container">
       <div className="tabs-container">
@@ -29,15 +30,31 @@ export const TopBar = ({ selectedTab }: NavProps) => {
   );
 };
 
-const Menu = ({ selectedTab }: NavProps) => {
-  return null;
+const Menu = () => {
+  return (
+    <div className="menu-container">
+      <div className="menu-container-buttons">
+        <OrangeLogo />
+        <MenuDropdown buttonName={"Shop Curriculum"} />
+        <MenuDropdown buttonName={"Events"} />
+        <MenuDropdown buttonName={"Leadership"} />
+        <MenuDropdown buttonName={"Parenting"} />
+        <MenuDropdown buttonName={"Music"} />
+        <MenuDropdown buttonName={"Resources"} />
+        <MenuDropdown buttonName={"About"} />
+      </div>
+      <div>
+        <SvgIcon iconName={"Search"} />
+      </div>
+    </div>
+  );
 };
 
 export const Nav = ({ selectedTab }: NavProps) => {
   return (
     <div>
       <TopBar selectedTab={selectedTab} />
-      <Menu selectedTab={selectedTab} />
+      <Menu />
     </div>
   );
 };

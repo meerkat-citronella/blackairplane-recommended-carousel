@@ -10,31 +10,66 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 600;
-
-  button {
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 2px;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: inherit;
-  }
-
-  .nav-tab {
-    padding: 9px 19px;
-  }
-
-  .selected-tab {
-    color: colors.$orange;
-    background: colors.$lightCloud;
-  }
+  position: relative;
+  z-index: 1;
 
   .tabs-container {
     display: flex;
     flex-direction: row;
+
+    button {
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 2px;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+    }
+
+    .nav-tab {
+      padding: 9px 19px;
+    }
+
+    .selected-tab {
+      color: colors.$orange;
+      background: colors.$lightCloud;
+    }
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 147px;
+  font-family: Avenir Next;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  box-shadow: 0px -6px 24px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 0;
+
+  .menu-container-buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+
+    button {
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 2px;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+    }
   }
 }
