@@ -1,0 +1,40 @@
+@use './../../static/constants/colors.scss' as colors;
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 147px;
+  color: colors.$darkGray;
+  background-color: colors.$cloud;
+  font-family: Avenir Next;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+
+  button {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+  }
+
+  .nav-tab {
+    padding: 9px 19px;
+  }
+
+  .selected-tab {
+    color: colors.$orange;
+    background: colors.$lightCloud;
+  }
+
+  .tabs-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
