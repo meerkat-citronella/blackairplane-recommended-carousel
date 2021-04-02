@@ -62,10 +62,8 @@ const Details = ({ bookName, salePrice, marketPrice }: DetailsProps) => {
 export const Page = ({ bookName }: PageProps) => {
   return (
     <div className="page-container">
-      <div className="item-container">
-        <Image bookName={bookName} />
-        <Details bookName={bookName} salePrice={17} marketPrice={19.99} />
-      </div>
+      <Image bookName={bookName} />
+      <Details bookName={bookName} salePrice={17} marketPrice={19.99} />
     </div>
   );
 };

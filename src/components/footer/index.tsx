@@ -15,7 +15,9 @@ const FooterNav = ({ title, linkTitles }: FooterNavProps) => {
       <br />
       <ul>
         {linkTitles.map((linkTitle, i) => (
-          <li key={i}>{linkTitle}</li>
+          <li key={i}>
+            <a href="/">{linkTitle}</a>
+          </li>
         ))}
       </ul>
     </div>
@@ -25,7 +27,9 @@ const FooterNav = ({ title, linkTitles }: FooterNavProps) => {
 const BrandAnchor = () => {
   return (
     <div className="anchor-container">
-      <OrangeLogo color="secondary" />
+      <a href="/">
+        <OrangeLogo color="secondary" />
+      </a>
       <div className="brand-signature">
         © 2020 The reThink Group, Inc. | All Rights Reserved | Legal Privacy
         Terms

@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 
 import { Nav } from "./components/nav";
 import { Page } from "./components/page";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           "It's Personal: Five Questions You Should Answer to Give Every Kid Hope"
         }
       />
+      <Footer />
     </div>
   );
 }

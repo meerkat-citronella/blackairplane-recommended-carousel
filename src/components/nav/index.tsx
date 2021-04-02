@@ -35,7 +35,9 @@ const Menu = () => {
     <div className="menu-container">
       <div className="menu-container-buttons">
         <div className="logo-wrapper">
-          <OrangeLogo />
+          <a href="/">
+            <OrangeLogo color="primary" />
+          </a>
         </div>
         <MenuDropdown buttonName={"Shop Curriculum"} />
         <MenuDropdown buttonName={"Events"} />

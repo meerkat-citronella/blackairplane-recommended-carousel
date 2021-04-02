@@ -18,3 +18,10 @@
   font-weight: normal;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Avenir Book";
+  src: url("./../otf//AvenirNextLTPro-It.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

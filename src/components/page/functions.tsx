@@ -20,10 +20,16 @@ interface MoreDetailsProps {
 
 export const PagePath = ({ bookName }: PageProps) => (
   <div className="page-path">
-    <SvgIcon iconName={"Home"} />
+    <a href="/">
+      <SvgIcon iconName={"Home"} />
+    </a>
     <span>
-      {" / Leaders / Books / "}
-      {bookName}
+      {" / "}
+      <a href="/">Leaders</a>
+      {" / "}
+      <a href="/">Books</a>
+      {" / "}
+      <a href="/">{bookName}</a>
     </span>
   </div>
 );
@@ -50,7 +56,9 @@ export const SocialShareButtons = ({ socials }: SocialShareButtonsProps) => (
     <div>Share</div>
     <div className="social-buttons-container">
       {socials.map((social) => (
-        <SvgIcon iconName={social} />
+        <a href="/">
+          <SvgIcon iconName={social} />
+        </a>
       ))}
     </div>
   </div>

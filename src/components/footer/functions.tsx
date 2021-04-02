@@ -9,7 +9,9 @@ export const SocialIcons = ({ socials }: SocialIconsProps) => {
   return (
     <div className="social-icons">
       {socials.map((social) => (
-        <SvgIcon iconName={social} color="secondary" />
+        <a href="/">
+          <SvgIcon iconName={social} color="secondary" />
+        </a>
       ))}
     </div>
   );
