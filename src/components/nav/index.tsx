@@ -34,7 +34,9 @@ const Menu = () => {
   return (
     <div className="menu-container">
       <div className="menu-container-buttons">
-        <OrangeLogo />
+        <div className="logo-wrapper">
+          <OrangeLogo />
+        </div>
         <MenuDropdown buttonName={"Shop Curriculum"} />
         <MenuDropdown buttonName={"Events"} />
         <MenuDropdown buttonName={"Leadership"} />

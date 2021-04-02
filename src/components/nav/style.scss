@@ -45,7 +45,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 147px;
+  flex-wrap: wrap;
+  padding: 8px 147px; // split the 16px top and bottom padding with the Orange logo element, because if it wraps want some margin on the logo
   font-family: Avenir Next;
   font-size: 14px;
   line-height: 16px;
@@ -57,7 +58,12 @@
   .menu-container-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 24px;
+
+    .logo-wrapper {
+      margin: 8px 0; // see note above
+    }
 
     button {
       background: none;
@@ -71,5 +77,15 @@
       line-height: inherit;
       font-weight: inherit;
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .top-bar-container {
+    padding-right: 3%;
+  }
+
+  .menu-container {
+    padding: 16px 3%;
   }
 }
