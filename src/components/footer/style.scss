@@ -1,0 +1,43 @@
+@use './../../static/constants/colors.scss' as colors;
+
+// FOOTER NAV
+.footer-nav-container {
+  font-family: Avenir Next;
+  display: flex;
+  padding: 40px 147px;
+  border-bottom: 1px solid colors.$cloud;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.nav-title {
+  font-weight: 500;
+}
+
+.footer-nav-container-inner {
+  margin-right: 66px;
+}
+
+// BRAND ANCHOR
+.anchor-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 147px;
+  font-family: Avenir Next;
+  font-size: 16px;
+  line-height: 24px;
+  color: colors.$midGray;
+}
+
+.social-icons {
+  display: flex;
+  column-gap: 19px;
+}
