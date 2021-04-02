@@ -1,0 +1,10 @@
+.indicator-dots-container {
+  max-height: 8px;
+
+  svg {
+    position: relative;
+    top: -9px; // hacky solution, but for some reason the enclosing div has height to it (despite no rules for it... mystery. would debug more if I had more time =)
+    margin: 0 4px;
+    padding: 0;
+  }
+}

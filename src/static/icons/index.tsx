@@ -118,7 +118,7 @@ const SearchSvg = () => (
   </svg>
 );
 
-const ChevronDown = () => (
+const ChevronDownSvg = () => (
   <svg
     width="16"
     height="16"
@@ -135,6 +135,161 @@ const ChevronDown = () => (
   </svg>
 );
 
+const ChevronRightSvg = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle r="28" transform="matrix(-1 0 0 1 28 28)" fill="white" />
+    <path
+      d="M25 34L31 28L25 22"
+      stroke="black"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
+const ChevronLeftSvg = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="28" cy="28" r="28" fill="white" />
+    <path
+      d="M31 34L25 28L31 22"
+      stroke="black"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
+const HomeIconSvg = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M2 6.00001L8 1.33334L14 6.00001V13.3333C14 13.687 13.8595 14.0261 13.6095 14.2762C13.3594 14.5262 13.0203 14.6667 12.6667 14.6667H3.33333C2.97971 14.6667 2.64057 14.5262 2.39052 14.2762C2.14048 14.0261 2 13.687 2 13.3333V6.00001Z"
+      stroke="#777777"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M6 14.6667V8H10V14.6667"
+      stroke="#777777"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
+const DotUnselectedSvg = () => (
+  <svg
+    width="8"
+    height="8"
+    viewBox="0 0 8 8"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle opacity="0.25" cx="4" cy="4" r="4" fill="black" />
+  </svg>
+);
+
+const DotSelectedSvg = () => (
+  <svg
+    width="8"
+    height="8"
+    viewBox="0 0 8 8"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="4" cy="4" r="4" fill="#FF681D" />
+  </svg>
+);
+
+const FacebookIconSvg = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 2.03999C6.5 2.03999 2 6.52999 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84999C10.44 7.33999 11.93 5.95999 14.22 5.95999C15.31 5.95999 16.45 6.14999 16.45 6.14999V8.61999H15.19C13.95 8.61999 13.56 9.38999 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.5701C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52999 17.5 2.03999 12 2.03999Z"
+      fill="#3579EA"
+    />
+  </svg>
+);
+
+const TwitterIconSvg = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28004 9.09 5.11004 7.38 3.00004 4.79C2.63004 5.42 2.42004 6.16 2.42004 6.94C2.42004 8.43 3.17004 9.75 4.33004 10.5C3.62004 10.5 2.96004 10.3 2.38004 10C2.38004 10 2.38004 10 2.38004 10.03C2.38004 12.11 3.86004 13.85 5.82004 14.24C5.46004 14.34 5.08004 14.39 4.69004 14.39C4.42004 14.39 4.15004 14.36 3.89004 14.31C4.43004 16 6.00004 17.26 7.89004 17.29C6.43004 18.45 4.58004 19.13 2.56004 19.13C2.22004 19.13 1.88004 19.11 1.54004 19.07C3.44004 20.29 5.70004 21 8.12004 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z"
+      fill="#1DA1F2"
+    />
+  </svg>
+);
+
+const PinterestIconSvg = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M9.04 21.54C10 21.83 10.97 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 16.25 4.67 19.9 8.44 21.34C8.35 20.56 8.26 19.27 8.44 18.38L9.59 13.44C9.59 13.44 9.3 12.86 9.3 11.94C9.3 10.56 10.16 9.53 11.14 9.53C12 9.53 12.4 10.16 12.4 10.97C12.4 11.83 11.83 13.06 11.54 14.24C11.37 15.22 12.06 16.08 13.06 16.08C14.84 16.08 16.22 14.18 16.22 11.5C16.22 9.1 14.5 7.46 12.03 7.46C9.21 7.46 7.55 9.56 7.55 11.77C7.55 12.63 7.83 13.5 8.29 14.07C8.38 14.13 8.38 14.21 8.35 14.36L8.06 15.45C8.06 15.62 7.95 15.68 7.78 15.56C6.5 15 5.76 13.18 5.76 11.71C5.76 8.55 8 5.68 12.32 5.68C15.76 5.68 18.44 8.15 18.44 11.43C18.44 14.87 16.31 17.63 13.26 17.63C12.29 17.63 11.34 17.11 11 16.5L10.33 18.87C10.1 19.73 9.47 20.88 9.04 21.57V21.54Z"
+      fill="#E60023"
+    />
+  </svg>
+);
+
+const PlusSignSvg = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 5V19"
+      stroke="#333333"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M5 12H19"
+      stroke="#333333"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
 export const SvgIcon = ({ iconName }: SvgIconProps) => {
   return (
     <>
@@ -143,7 +298,25 @@ export const SvgIcon = ({ iconName }: SvgIconProps) => {
       ) : iconName === "Search" ? (
         <SearchSvg />
       ) : iconName === "Chevron Down" ? (
-        <ChevronDown />
+        <ChevronDownSvg />
+      ) : iconName === "Chevron Right" ? (
+        <ChevronRightSvg />
+      ) : iconName === "Chevron Left" ? (
+        <ChevronLeftSvg />
+      ) : iconName === "Home" ? (
+        <HomeIconSvg />
+      ) : iconName === "Dot Selected" ? (
+        <DotSelectedSvg />
+      ) : iconName === "Dot Unselected" ? (
+        <DotUnselectedSvg />
+      ) : iconName === "Facebook" ? (
+        <FacebookIconSvg />
+      ) : iconName === "Twitter" ? (
+        <TwitterIconSvg />
+      ) : iconName === "Pinterest" ? (
+        <PinterestIconSvg />
+      ) : iconName === "Plus Sign" ? (
+        <PlusSignSvg />
       ) : null}
     </>
   );
