@@ -1,0 +1,145 @@
+@use './colors.scss' as colors;
+@use "sass:map";
+
+$font-family: (
+  "sans-serif": Avenir Next,
+  "sans-serif-header": Futura,
+);
+
+$font-weight: (
+  "normal": 400,
+  "a-little-bold": 500,
+  "semibold": 600,
+  "bold": 700,
+);
+
+$font-size: (
+  "p": (
+    "tiny": 12px,
+    "small": 14px,
+    "normal": 16px,
+    "large": 18px,
+  ),
+  "h": (
+    "normal": 32px,
+    "small": 24px,
+  ),
+);
+
+$line-height: (
+  "p": (
+    "ultra-tiny": 12px,
+    "tiny": 16px,
+    "small": 20px,
+    "normal": 24px,
+  ),
+  "h": (
+    "small": 32px,
+    "normal": 40px,
+  ),
+);
+
+$color: (
+  "p": (
+    "primary": colors.$darkGray,
+    "secondary": colors.$midGray,
+    "accent": colors.$orange,
+    "inverted": colors.$white,
+  ),
+  "h": (
+    "primary": colors.$black,
+  ),
+);
+
+/// Map deep get
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map.get($map, $key);
+  }
+  @return $map;
+}
+
+// define mixins
+@mixin paragraph() {
+  font-family: map.get($font-family, "sans-serif"); // Avenir Next
+  font-size: map-deep-get($font-size, "p", "normal"); // 16px
+  line-height: map-deep-get($line-height, "p", "normal"); // 24px
+  font-weight: map.get($font-weight, "normal"); // 400
+  color: map-deep-get($color, "p", "primary"); // dark gray
+}
+
+@mixin header() {
+  font-family: map.get($font-family, "sans-serif-header"); // Futura
+  font-size: map-deep-get($font-size, "h", "normal"); // 32px
+  line-height: map-deep-get($line-height, "h", "normal"); // 40px
+  font-weight: map.get($font-weight, "bold"); // 700
+  color: map-deep-get($color, "h", "primary"); // black
+}
+
+// Nav
+@mixin nav-top-bar() {
+  font-size: map-deep-get($font-size, "p", "tiny"); // 12px
+  line-height: map-deep-get($line-height, "p", "ultra-tiny"); // 12px
+  font-weight: map.get($font-weight, "semibold"); // 600
+}
+
+@mixin nav-menu() {
+  font-size: map-deep-get($font-size, "p", "small"); // 14px
+  line-height: map-deep-get($line-height, "p", "tiny"); // 16px
+  font-weight: map.get($font-weight, "a-little-bold"); // 500
+}
+
+@mixin page-path() {
+  font-size: map-deep-get($font-size, "p", "small"); // 14px
+  line-height: map-deep-get($line-height, "p", "tiny"); // 16px
+  font-weight: map.get($font-weight, "a-little-bold"); // 500
+  color: map-deep-get($color, "p", "secondary"); // mid gray
+}
+
+// Page
+@mixin book-name() {
+  @include header();
+  letter-spacing: -0.5px;
+}
+
+@mixin sale-price() {
+  @include header();
+  font-size: map-deep-get($font-size, "h", "small"); // 24px
+  line-height: map-deep-get($line-height, "h", "small"); // 32px
+  color: colors.$orange;
+}
+
+@mixin book-description() {
+  font-size: map-deep-get($font-size, "p", "small"); // 14px
+  line-height: map-deep-get($line-height, "p", "small"); // 20px
+}
+
+@mixin add-to-cart-button() {
+  font-weight: map.get($font-weight, "bold"); // 700
+  color: map-deep-get($color, "p", "inverted"); // white
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-style: normal;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@mixin more-details() {
+  font-weight: map.get($font-weight, "semibold"); // 600
+}
+
+// Footer
+@mixin footer-title() {
+  font-weight: map.get($font-weight, "a-little-bold"); // 500
+}
+
+@mixin brand-anchor {
+  @include footer-title();
+  color: map-deep-get($color, "p", "secondary"); // mid gray
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.scss";
 
 import { Nav } from "./components/nav";
 import { Page } from "./components/page";

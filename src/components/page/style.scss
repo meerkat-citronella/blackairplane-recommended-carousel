@@ -1,26 +1,19 @@
 @use './../../static/constants/colors.scss' as colors;
+@use './../../static/constants/fonts.scss' as fonts;
 
-// PAGE
+// Page
 .page-container {
-  font-family: Avenir Next;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 101px;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
   column-gap: 62px;
-  color: colors.$darkGray;
+  margin-bottom: 101px;
 }
 
-// IMAGE
+// Image
 .page-path {
-  font-size: 14px;
-  line-height: 16px;
+  @include fonts.page-path();
   display: flex;
   align-items: center;
   align-content: center;
@@ -59,25 +52,17 @@
   justify-content: center;
 }
 
-// DETAILS
+// Details
 .details-container {
   width: 442px;
 
   h3 {
-    font-family: Futura;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -0.5px;
+    @include fonts.book-name();
     margin: 24px 0;
   }
 
   p {
-    color: colors.$midGray;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    @include fonts.book-description();
   }
 }
 
@@ -88,12 +73,7 @@
   margin: 24px 0;
 
   h4 {
-    font-family: Futura;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    color: colors.$orange;
+    @include fonts.sale-price();
     margin: 0;
   }
 
@@ -109,19 +89,12 @@
   margin: 24px 0;
 
   button {
+    @include fonts.add-to-cart-button();
     box-sizing: border-box;
     flex-basis: 206px;
     background: none;
     border: none;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
     padding: 16px 43px;
-    color: colors.$white;
     background: colors.$orange;
   }
 }
@@ -160,10 +133,10 @@
 }
 
 .more-details {
+  @include fonts.more-details();
   display: flex;
   justify-content: space-between;
   padding: 16px 0;
-  font-weight: 600;
   border-top: 1px solid colors.$cloud;
   border-bottom: 1px solid colors.$cloud;
   margin-top: -1px; // to get the borders to collapse

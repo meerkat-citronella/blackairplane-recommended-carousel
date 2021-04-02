@@ -1,0 +1,7 @@
+@use './static/constants/colors.scss' as colors;
+@use './static/constants/fonts.scss' as fonts;
+
+body {
+  // set p style for whole app
+  @include fonts.paragraph();
+}

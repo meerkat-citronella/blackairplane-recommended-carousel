@@ -1,15 +1,14 @@
 @use './../../static/constants/colors.scss' as colors;
+@use './../../static/constants/fonts.scss' as fonts;
 
+// TopBar
 .top-bar-container {
+  @include fonts.nav-top-bar();
   display: flex;
   justify-content: space-between;
   padding-right: 147px;
   color: colors.$darkGray;
   background-color: colors.$cloud;
-  font-family: Avenir Next;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 600;
   position: relative;
   z-index: 1;
 
@@ -41,16 +40,14 @@
   }
 }
 
+// Menu
 .menu-container {
+  @include fonts.nav-menu();
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 8px 147px; // split the 16px top and bottom padding with the Orange logo element, because if it wraps want some margin on the logo
-  font-family: Avenir Next;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
   box-shadow: 0px -6px 24px rgba(0, 0, 0, 0.35);
   position: relative;
   z-index: 0;
